@@ -21,7 +21,7 @@ for (let i = 0; i < 3; i += 1) {
   const b = Math.floor(Math.random() * 100);
   const correctAnswer = findGCD(a, b);
 
-  console.log('Question: ', `${a} ${b}`);
+  console.log('Question:', `${a} ${b}`);
 
   const answer = parseInt(readlineSync.question('Your answer: '));
 

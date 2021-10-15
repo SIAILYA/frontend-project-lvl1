@@ -14,7 +14,7 @@ for (let i = 0; i < 3; i += 1) {
   const op = ['+', '-', '*'][Math.floor(Math.random() * 3)];
   const correctAnswer = eval(`${a} ${op} ${b}`);
 
-  console.log('Question: ', `${a} ${op} ${b}`);
+  console.log('Question:', `${a} ${op} ${b}`);
 
   const answer = parseInt(readlineSync.question('Your answer: '));
 

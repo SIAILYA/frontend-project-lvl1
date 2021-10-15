@@ -16,7 +16,7 @@ for (let i = 0; i < 3; i += 1) {
   let a = Math.floor(Math.random() * 100);
   let correctAnswer = isPrime(a) ? "yes" : "no"
 
-  console.log('Question: ', `${a}`);
+  console.log('Question:', `${a}`);
 
   const answer = readlineSync.question('Your answer: ')
 

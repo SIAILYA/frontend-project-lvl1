@@ -30,7 +30,7 @@ const generateProgression = () => {
 for (let i = 0; i < 3; i += 1) {
   const [progression, removed] = generateProgression()
 
-  console.log('Question: ', `${progression}`);
+  console.log('Question:', `${progression}`);
 
   const answer = parseInt(readlineSync.question('Your answer: '));
 
