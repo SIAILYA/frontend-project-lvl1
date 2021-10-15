@@ -7,3 +7,5 @@ export const readName = () => {
 
   return name;
 };
+
+export default readName;

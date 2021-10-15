@@ -9,30 +9,30 @@ const name = readName();
 console.log('What number is missing in the progression?');
 
 const generateProgression = () => {
-  let inc = Math.floor(Math.random() * 100) + 1
-  let resProgression = []
+  const inc = Math.floor(Math.random() * 100) + 1;
+  const resProgression = [];
 
-  for (let i = Math.floor(Math.random() * 3); i < Math.floor(Math.random() * 5) + 8; i++) {
-    resProgression.push(i * inc)
+  for (let i = Math.floor(Math.random() * 3); i < Math.floor(Math.random() * 5) + 8; i += 1) {
+    resProgression.push(i * inc);
     // if (i === 0) {
     //   resProgression.push(inc)
     // } else {
     // }
   }
 
-  let removedIndex = Math.floor(Math.random() * resProgression.length)
-  let removed = resProgression[removedIndex]
-  resProgression[removedIndex] = ".."
+  const removedIndex = Math.floor(Math.random() * resProgression.length);
+  const removed = resProgression[removedIndex];
+  resProgression[removedIndex] = '..';
 
-  return [resProgression.join(" "), removed]
-}
+  return [resProgression.join(' '), removed];
+};
 
 for (let i = 0; i < 3; i += 1) {
-  const [progression, removed] = generateProgression()
+  const [progression, removed] = generateProgression();
 
   console.log('Question:', `${progression}`);
 
-  const answer = parseInt(readlineSync.question('Your answer: '));
+  const answer = parseInt(readlineSync.question('Your answer: '), 10);
 
   if (answer === removed) {
     console.log('Correct!');

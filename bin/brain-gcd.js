@@ -23,7 +23,7 @@ for (let i = 0; i < 3; i += 1) {
 
   console.log('Question:', `${a} ${b}`);
 
-  const answer = parseInt(readlineSync.question('Your answer: '));
+  const answer = parseInt(readlineSync.question('Your answer: '), 10);
 
   if (answer === correctAnswer) {
     console.log('Correct!');

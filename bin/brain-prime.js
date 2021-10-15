@@ -8,17 +8,16 @@ const name = readName();
 
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
-const isPrime = (num) => {
-  return [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101].indexOf(num) !== -1
-}
+const isPrime = (num) => [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
+  41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101].indexOf(num) !== -1;
 
 for (let i = 0; i < 3; i += 1) {
-  let a = Math.floor(Math.random() * 100);
-  let correctAnswer = isPrime(a) ? "yes" : "no"
+  const a = Math.floor(Math.random() * 100);
+  const correctAnswer = isPrime(a) ? 'yes' : 'no';
 
   console.log('Question:', `${a}`);
 
-  const answer = readlineSync.question('Your answer: ')
+  const answer = readlineSync.question('Your answer: ');
 
   if (answer === correctAnswer) {
     console.log('Correct!');
