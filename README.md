@@ -14,3 +14,6 @@ https://asciinema.org/a/HamiuwNWVEptfoDsynTkos94T
 
 ### Запись игры brain-progression  
 https://asciinema.org/a/J96ninH7VAKNQTVddk3vQwhNE
+
+### Запись игры brain-progression    
+https://asciinema.org/a/74z0X6iH7Rl3cRt32L0ne9n8f
