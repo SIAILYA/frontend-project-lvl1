@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import readlineSync from "readline-sync";
-import {readName} from '../src/cli.js';
+import readlineSync from 'readline-sync';
+import { readName } from '../src/cli.js';
 
 let wins = false;
-let name = readName();
+const name = readName();
 
 console.log('Find the greatest common divisor of given numbers.');
 
@@ -14,20 +14,20 @@ const findGCD = (a, b) => {
   }
 
   return findGCD(b, a % b);
-}
+};
 
 for (let i = 0; i < 3; i += 1) {
-  let a = Math.floor(Math.random() * 100)
-  let b = Math.floor(Math.random() * 100)
-  let correctAnswer = findGCD(a, b)
+  const a = Math.floor(Math.random() * 100);
+  const b = Math.floor(Math.random() * 100);
+  const correctAnswer = findGCD(a, b);
 
-  console.log("Question: ", `${a} ${b}`);
+  console.log('Question: ', `${a} ${b}`);
 
   const answer = parseInt(readlineSync.question('Your answer: '));
 
   if (answer === correctAnswer) {
-    console.log("Correct!");
-    wins += 1
+    console.log('Correct!');
+    wins += 1;
   } else {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
     break;
