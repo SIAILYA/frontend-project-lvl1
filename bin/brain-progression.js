@@ -39,6 +39,7 @@ for (let i = 0; i < 3; i += 1) {
     wins += 1;
   } else {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${removed}'.`);
+    console.log(`Let's try again, ${name}!`);
     break;
   }
 }
